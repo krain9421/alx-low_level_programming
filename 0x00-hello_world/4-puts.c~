@@ -1,8 +1,8 @@
+#include <stdio.h>
+
 /*
 * Program that prints out text using puts() function
 */
-#include <stdio.h>
-
 int main(void)
 {
 char message[] = "Programming is like building a multilingual puzzle";
