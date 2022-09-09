@@ -15,7 +15,7 @@ char types[5][20] = {"char", "int", "long int",
 	"long long int", "float"};
 for (i = 0; i < 5; i++)
 {
-if(i == 2)
+if (i == 2)
 printf("Size of an %s: %d byte(s)\n", types[i], sizez[i]);
 else
 printf("Size of a %s: %d byte(s)\n", types[i], sizez[i]);
