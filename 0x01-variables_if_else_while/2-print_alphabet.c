@@ -9,13 +9,12 @@
 */
 int main(void)
 {
-	int n, i;
+	int i;
+	char ch = 'a';
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	char ch = 'a';
-
 	for (i = 0; i < 26; i++)
 	putchar(ch++);
 	return (0);
