@@ -8,6 +8,7 @@
 */
 int main(void)
 {
+int i = 0;
 int sizez[5] = {sizeof(char), sizeof(int), sizeof(long int),
 	sizeof(long long int), sizeof(float)};
 char types[5][20] = {"char", "int", "long int",
