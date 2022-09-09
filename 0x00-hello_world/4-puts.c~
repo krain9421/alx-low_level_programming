@@ -1,5 +1,5 @@
-/* 
-Program that prints out text using puts() function
+/*
+* Program that prints out text using puts() function
 */
 #include <stdio.h>
 
