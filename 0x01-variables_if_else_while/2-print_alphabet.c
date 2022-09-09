@@ -9,7 +9,7 @@
 */
 int main(void)
 {
-	int i;
+	int i, n;
 	char ch = 'a';
 
 	srand(time(0));
