@@ -10,12 +10,8 @@
 int main(void)
 {
 	int i;
-	int n;
 	char ch = 'a';
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
 	for (i = 0; i < 26; i++)
 	putchar(ch++);
 	return (0);
