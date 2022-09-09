@@ -16,7 +16,7 @@ int main(void)
 	for (i = 0; i < 26; i++)
 	putchar(ch++);
 	for (i = 0; i < 26; i++)
-	putchar(ch1++);	
+	putchar(ch1++);
 	putchar('\n');
 	return (0);
 }
