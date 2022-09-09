@@ -1,7 +1,10 @@
 #include <stdio.h>
 
 /**
-* Program that prints out text using puts() function
+* main - main function, program starts here
+*
+* Description: Program prints out text using puts() function
+* Return: 0 if program runs successfully
 */
 int main(void)
 {
