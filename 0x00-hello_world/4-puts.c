@@ -1,3 +1,6 @@
+/*
+* Program that prints out text using puts() function
+*/
 #include <stdio.h>
 
 int main(void)
