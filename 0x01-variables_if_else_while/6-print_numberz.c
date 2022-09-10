@@ -10,11 +10,12 @@ int main(void)
 {
 	int i;
 	char n = '1';
+	char ln = '\n'
 
 	for (i = 0; i < 10; i++)
 	{
 	putchar(n);
 	}
-	putchar('	\n');
+	putchar(ln);
 	return (0);
 }
