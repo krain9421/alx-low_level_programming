@@ -11,7 +11,7 @@ int main(void)
 {
 	int i;
 	char alpha = 'a';
-	int num = 0;
+	int num = 48;
 
 	for (i = 0; i < 10; i++)
 	{
