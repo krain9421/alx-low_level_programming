@@ -8,12 +8,13 @@
 */
 int main(void)
 {
-	int i = 0;
-	char string[] = "0123456789\n";
+	int i;
+	int num = 48;
 
-	while (string[i] != '\0')
+	for (i = 0; i < 10; i++)
 	{
-	putchar(string[i]);
+	putchar(num++);
 	}
+	putchar('\n');
 	return (0);
 }
