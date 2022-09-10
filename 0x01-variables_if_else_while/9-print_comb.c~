@@ -15,7 +15,7 @@ int main(void)
 	for (i = 0; i < 10; i++)
 	{
 	putchar(num++);
-	if (num == 9)
+	if (num == 58)
 	putchar('\n');
 	else
 	putchar(',');

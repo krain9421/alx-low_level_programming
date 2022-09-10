@@ -16,7 +16,8 @@ int main(void)
 	{
 	putchar(num++);
 	if (num == 58)
-	putchar('\n');
+	{
+	}
 	else
 	putchar(',');
 	putchar(' ');
