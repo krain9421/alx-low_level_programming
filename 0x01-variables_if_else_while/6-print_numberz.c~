@@ -9,13 +9,11 @@
 int main(void)
 {
 	int i;
-	char n = '1';
-	char ln = '\n';
+	char string[] = "0123456789\n";
 
-	for (i = 0; i < 10; i++)
+	while (string[i] != '\0')
 	{
-	putchar(n);
+	putchar(string[i]);
 	}
-	putchar(ln);
 	return (0);
 }
