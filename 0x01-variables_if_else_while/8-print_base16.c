@@ -17,7 +17,7 @@ int main(void)
 	{
 	putchar(num++);
 	}
-	for (i = 0; i < 5; i++)
+	for (i = 0; i < 6; i++)
 	{
 	putchar(alpha++);
 	}
