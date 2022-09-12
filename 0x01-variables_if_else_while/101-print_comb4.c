@@ -20,7 +20,7 @@ int main(void)
 
 			for (; k < 8; k++)
 			{
-				if (n2 >= n3 + k)
+				if (n2 >= n3 + k || n1 >= n3 + k)
 				{}
 				else
 				{

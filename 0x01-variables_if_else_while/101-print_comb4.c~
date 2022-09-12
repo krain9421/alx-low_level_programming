@@ -10,13 +10,14 @@ int main(void)
 	int n1 = 48;
 	int n2 = 49;
 	int n3 = 50;
-	int k = 0;
 
 	for (; n1 < 56; n1++)
 	{
 		n2 = 49;
 		for (; n2 < 57; n2++)
 		{
+			int k = 0;
+
 			for (; k < 8; k++)
 			{
 				if (n2 >= n3 + k)
