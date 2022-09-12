@@ -7,7 +7,6 @@
 */
 int main(void)
 {
-	int i, j, k;
 	int n1 = 48;
 	int n2 = 49;
 	int n3 = 50;
