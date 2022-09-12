@@ -16,13 +16,13 @@ int main(void)
 	{
 		for (j = 0; j < 9; j++)
 		{
-			if (n1 >= n2+j)
+			if (n1 >= n2 + j)
 			{
 			}
 			else
 			{
 				putchar(n1);
-				putchar(n2+j);
+				putchar(n2 + j);
 				putchar(',');
 				putchar(' ');
 			}

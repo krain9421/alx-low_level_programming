@@ -23,11 +23,17 @@ int main(void)
 			{
 				putchar(n1);
 				putchar(n2 + j);
-				putchar(',');
-				putchar(' ');
+				if (n1 == 56 && j == 8)
+				{}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	n1++;
 	}
+	putchar('\n');
 	return (0);
 }
