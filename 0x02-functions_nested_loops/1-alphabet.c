@@ -6,11 +6,11 @@
 * Return - void
 */
 
-void print_alphabet()
+void print_alphabet(void)
 {
 int a = 97;
 
-for(; a < 123; a++)
+for (; a < 123; a++)
 {
 _putchar(a);
 }
