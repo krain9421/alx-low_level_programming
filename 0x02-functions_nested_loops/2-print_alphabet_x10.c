@@ -18,6 +18,6 @@ for (; j < 123; j++)
 {
 _putchar(j);
 }
-_putchar('\n')
+_putchar('\n');
 }
 }
