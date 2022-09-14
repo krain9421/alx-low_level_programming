@@ -24,7 +24,7 @@ void times_table(void)
 			}
 			else if (k == 0)
 			{
-				printf("%-d, ", i * k)
+				printf("%-d, ", i * k);
 			}
 			else
 			{
