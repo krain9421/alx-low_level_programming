@@ -20,7 +20,6 @@ void times_table(void)
 			if (k == 9)
 			{
 				printf("%2d\n", i * k);
-			
 			}
 			else if (k == 0)
 			{
