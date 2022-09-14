@@ -12,7 +12,7 @@ void times_table(void)
 	int i = 0;
 	int k;
 
-	for (; i < n + 1; i++)
+	for (; i < 10; i++)
 	{
 		k = 0;
 		for (; k < 10; k++)
