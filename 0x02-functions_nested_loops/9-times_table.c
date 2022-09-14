@@ -26,7 +26,7 @@ void times_table(void)
 				printf("%2d, ", i * k);
 			}
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 }
 
