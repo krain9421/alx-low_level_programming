@@ -21,11 +21,11 @@ void print_times_table(int n)
 		for (; i < n + 1; i++)
 		{
 			k = 0;
-			for (; k < 10; k++)
+			for (; k < n + 1; k++)
 			{
-				if (k == 9)
+				if (k == n)
 				{	
-					printf("%2d\n", i * k);
+					printf("%3d\n", i * k);
 				}
 				else if (k == 0)
 				{
@@ -33,7 +33,7 @@ void print_times_table(int n)
 				}
 				else
 				{
-					printf("%2d, ", i * k);
+					printf("%3d, ", i * k);
 				}
 			}
 		}
