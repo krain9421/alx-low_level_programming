@@ -2,7 +2,8 @@
 
 /**
 * add - Adds two integers and returns the result
-* @n: the number to be checked
+* @n: the first integer
+* @m: the second integer
 * Return: the sum of the two integers
 */
 
