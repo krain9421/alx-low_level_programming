@@ -24,12 +24,12 @@ void print_times_table(int n)
 			for (; k < n + 1; k++)
 			{
 				if (k == n)
-				{	
+				{
 					printf("%3d\n", i * k);
 				}
 				else if (k == 0)
 				{
-					printf("%-d, ", i * k);
+					printf("%--d, ", i * k);
 				}
 				else
 				{
