@@ -13,6 +13,10 @@ void print_times_table(int n)
 {
 	if (n > 15 || n < 0)
 	{}
+	else if (n == 0)
+	{
+		printf("%d\n", n);
+	}
 	else
 	{
 		int i = 0;
@@ -29,7 +33,7 @@ void print_times_table(int n)
 				}
 				else if (k == 0)
 				{
-					printf("%--d, ", i * k);
+					printf("%-d, ", i * k);
 				}
 				else
 				{
