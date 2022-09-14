@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* print_sign - Checks for lowercase character
-*
+* print_sign - Checks for the sign of a number
+* @n - the number to be checked
 * Return: 1 if n is positive
 * Return 0 if n is zero
 * Return -1 if n is negative
