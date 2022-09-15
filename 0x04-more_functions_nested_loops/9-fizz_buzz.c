@@ -9,24 +9,25 @@
 
 int main(void)
 {
-	int i = 0;
+	int i = 1;
+	int m3, m5;
 
 	for (; i < 101; i++)
 	{
-		int m3 = i % 3;
-		int m5 = i % 5;
+		m3 = i % 3;
+		m5 = i % 5;
 
 		if (m3 == 0 && m5 != 0)
 		{
-			puts("Fizz ");
+			printf("Fizz ");
 		}
 		else if (m5 == 0 && m3 != 0)
 		{
-			puts("Buzz ");
+			printf("Buzz ");
 		}
 		else if (m5 == 0 && m3 == 0)
 		{
-			puts("FizzBuzz ");
+			printf("FizzBuzz ");
 		}
 		else
 		printf("%d ", i);
