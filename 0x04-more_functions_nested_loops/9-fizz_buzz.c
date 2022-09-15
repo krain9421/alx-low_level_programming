@@ -24,6 +24,10 @@ int main(void)
 		{
 			puts("Buzz ");
 		}
+		else if (m5 == 0 && m3 == 0)
+		{
+			puts("FizzBuzz ");
+		}
 		else
 		printf("%d ", i);
 	}
