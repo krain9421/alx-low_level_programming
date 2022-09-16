@@ -23,7 +23,14 @@ int main(void)
 		}
 		else if (m5 == 0 && m3 != 0)
 		{
-			printf("Buzz ");
+			if (i == 100)
+			{
+				printf("Buzz\n");
+			}
+			else
+			{
+				printf("Buzz ");
+			}
 		}
 		else if (m5 == 0 && m3 == 0)
 		{
