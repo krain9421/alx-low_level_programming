@@ -23,6 +23,10 @@ void print_number(int n)
 	{
 		if (n < 0)
 		{
+			if (n == (-2147483647 - 1))
+			{
+				n = -2147483647;
+			}
 			_putchar('-');
 			n = (n * -1);
 		}
