@@ -10,7 +10,7 @@
 void print_number(int n)
 {
 	int tmp = n;
-	int dig;
+	int dig = 0;
 	int tdig;
 	int i;
 	int k;
