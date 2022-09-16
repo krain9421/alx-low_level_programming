@@ -9,11 +9,7 @@
 
 void print_number(int n)
 {
-	if (n == -2147483648)
-	{
-		n = -2147483647;
-	}
-	int tmp = n;
+	int tmp;
 	int dig = 0;
 	int tdig;
 	int i;
@@ -25,16 +21,17 @@ void print_number(int n)
 	}
 	else
 	{
-		do {
-			dig++;
-			tmp = tmp / 10;
-		} while (tmp);
-
 		if (n < 0)
 		{
 			_putchar('-');
 			n = (n * -1);
 		}
+		tmp = n;
+
+		do {
+			dig++;
+			tmp = tmp / 10;
+		} while (tmp);
 		for (i = 0; i < dig; i++)
 		{
 			tdig = dig;
