@@ -15,6 +15,12 @@ void print_number(int n)
 	int i;
 	int k;
 
+	if (n == 0)
+	{
+		_putchar('0');
+	}
+	else
+	{
 	do
 	{
 		dig++;
@@ -39,4 +45,6 @@ void print_number(int n)
 		}
 		_putchar('0' + (tmp % 10));
 	}
+	}
 }
+
