@@ -1,4 +1,4 @@
-#include "main.h"
+include "main.h"
 
 /**
 * print_number - prints a number using only _putchar
@@ -9,43 +9,24 @@
 
 void print_number(int n)
 {
-	int tmp = n;
-	int dig;
-	int tdig;
-	int i;
-	int k;
-
 	if (n == 0)
 	{
 		_putchar('0');
 	}
 	else
 	{
-	do
-	{
-		dig++;
-		tmp = tmp / 10;
-	} while (tmp);
-
-	if (n < 0)
-	{
-		_putchar('-');
-		n = (n * -1);
-	}
-
-	for (i = 0; i < dig; i++)
-	{
-		tdig = dig;
-		tmp = n;
-		k = i;
-		while (tdig > (k + 1))
+		if (n < 0)
 		{
-			tmp = tmp / 10;
-			--tdig;
+			_putchar('-');
+			n = n * -1;
 		}
-		_putchar('0' + (tmp % 10));
+
+		if (n / 10)
+		{
+			print_number(n / 10);
+		}
+
+		_putchar('0' + (n % 10));
 	}
-	}
-	_putchar('\n');
 }
 
