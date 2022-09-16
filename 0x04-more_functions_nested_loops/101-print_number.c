@@ -11,7 +11,7 @@ void print_number(int n)
 {
 	if (n == -2147483648)
 	{
-		n = 2147483647;
+		n = -2147483647;
 	}
 	int tmp = n;
 	int dig = 0;
