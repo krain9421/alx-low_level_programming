@@ -2,8 +2,8 @@
 
 /**
 * main - program starts here
-* Description: Fizz-Buzz
 *
+* Description: Fizz-Buzz
 * Return: 0 if program runs successfully
 */
 
@@ -30,7 +30,9 @@ int main(void)
 			printf("FizzBuzz ");
 		}
 		else
-		printf("%d ", i);
+		{
+			printf("%d ", i);
+		}
 	}
 
 	return (0);
