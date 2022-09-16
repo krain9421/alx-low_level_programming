@@ -10,7 +10,7 @@
 void print_number(int num)
 {
 	unsigned int n = num;
-	int tmp;
+	unsigned int tmp;
 	int dig = 0;
 	int tdig;
 	int i;
@@ -22,7 +22,7 @@ void print_number(int num)
 	}
 	else
 	{
-		if (n < 0)
+		if (num < 0)
 		{
 			_putchar('-');
 			n = (n * -1);
