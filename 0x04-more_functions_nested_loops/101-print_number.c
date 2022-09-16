@@ -3,13 +3,14 @@
 
 /**
 * print_number - prints a number using only _putchar
-* @n: the number to be printed
+* @num: the number to be printed
 *
 * Return: void
 */
 
-void print_number(int n)
+void print_number(int num)
 {
+	unsigned int n = num;
 	int tmp;
 	int dig = 0;
 	int tdig;
@@ -24,10 +25,6 @@ void print_number(int n)
 	{
 		if (n < 0)
 		{
-			if (n == INT_MIN)
-			{
-				n = -INT_MAX;
-			}
 			_putchar('-');
 			n = (n * -1);
 		}
