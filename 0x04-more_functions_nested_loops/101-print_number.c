@@ -10,7 +10,7 @@
 void print_number(int n)
 {
 	int tmp = n;
-	int dig = 0;
+	int dig;
 	int tdig;
 	int i;
 	int k;
@@ -25,12 +25,13 @@ void print_number(int n)
 	{
 		dig++;
 		tmp = tmp / 10;
-	}while (tmp);
+	}
+	while (tmp);
 
 	if (n < 0)
 	{
 		_putchar('-');
-		n = n * -1;
+		n = -n;
 	}
 
 	for (i = 0; i < dig; i++)
@@ -46,5 +47,6 @@ void print_number(int n)
 		_putchar('0' + (tmp % 10));
 	}
 	}
+	_putchar('\n');
 }
 
