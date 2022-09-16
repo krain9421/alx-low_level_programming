@@ -23,6 +23,9 @@ int main(void)
 		}
 		else if (m5 == 0 && m3 != 0)
 		{
+			if (i == 100)
+			printf("Buzz");
+			else
 			printf("Buzz ");
 		}
 		else if (m5 == 0 && m3 == 0)
