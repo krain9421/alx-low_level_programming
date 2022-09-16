@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 /**
 * print_number - prints a number using only _putchar
@@ -23,9 +24,9 @@ void print_number(int n)
 	{
 		if (n < 0)
 		{
-			if (n == (-2147483647 - 1))
+			if (n == INT_MIN)
 			{
-				n = -2147483647;
+				n = -INT_MAX;
 			}
 			_putchar('-');
 			n = (n * -1);
