@@ -25,7 +25,7 @@ void print_number(int n)
 		{
 			dig++;
 			tmp = tmp / 10;
-		} while (tmp);
+		}while (tmp);
 
 		if (n < 0)
 		{
