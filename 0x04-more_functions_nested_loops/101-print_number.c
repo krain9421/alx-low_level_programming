@@ -24,13 +24,13 @@ void print_number(int n)
 	if (n < 0)
 	{
 		_putchar('-');
-		num = num * -1;
+		n = n * -1;
 	}
 
 	for (i = 0; i < dig; i++)
 	{
 		tdig = dig;
-		tmp = num;
+		tmp = n;
 		k = i;
 		while (tdig > (k + 1))
 		{
