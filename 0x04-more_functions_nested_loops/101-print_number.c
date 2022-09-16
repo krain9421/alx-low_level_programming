@@ -21,11 +21,10 @@ void print_number(int n)
 	}
 	else
 	{
-		do
-		{
+		do {
 			dig++;
 			tmp = tmp / 10;
-		}while (tmp);
+		} while (tmp);
 
 		if (n < 0)
 		{
