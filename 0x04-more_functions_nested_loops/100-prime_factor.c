@@ -24,7 +24,7 @@ int main(void)
 		{
 			if ((pnumber % div) == 0)
 			{
-				pnumber = pnumber / 2;
+				pnumber = pnumber / div;
 			}
 		}
 	}
