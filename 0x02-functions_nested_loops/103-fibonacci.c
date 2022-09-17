@@ -21,6 +21,9 @@ int main(void)
 		{
 			sum += next;
 		}
+		t1 = t2;
+		t2 = nextTerm;
+		nextTerm = t1 + t2;
 	}
 	printf("%d\n", sum);
 
