@@ -13,6 +13,7 @@ int main(void)
 	t1 = 0;
 	t2 = 1;
 	next = t1 + t2;
+	sum = 0;
 
 	while (next < 4000000)
 	{
