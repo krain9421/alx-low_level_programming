@@ -18,7 +18,7 @@ int main(void)
 	{
 		if (next % 2 == 0)
 		{
-			sum += nextTerm;
+			sum += next;
 		}
 	}
 	printf("%d\n", sum);
