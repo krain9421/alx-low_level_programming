@@ -12,7 +12,7 @@ int main(void)
 
 	pnumber = 612852475143;
 
-	while (div < pnumber / 2)
+	while (div < (pnumber / 2))
 	{
 		if ((pnumber % 2) == 0)
 		{
