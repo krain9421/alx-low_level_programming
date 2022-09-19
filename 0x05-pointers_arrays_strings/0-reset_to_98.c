@@ -9,9 +9,9 @@
 
 void reset_to_98(int *n)
 {
-	int value = 98;
+	int val = 98;
 
 	/* changing the value pointed to by *n to 98 */
-	*n = 98;
+	*n = val;
 }
 
