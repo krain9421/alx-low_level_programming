@@ -2,7 +2,7 @@
 
 /**
 * _strcat - function appends the src string to the dest string
-* @dest: string to appeend to
+* @dest: string to append to
 * @src: string to copy from
 *
 * Return: string
@@ -20,7 +20,7 @@ char *_strcat(char *dest, char *src)
 	while(src[j])
 	{
 		dest[i] = src[j];
-		i++;;
+		i++;
 		j++;
 	}
 	dest[i] = '\0';
