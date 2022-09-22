@@ -6,4 +6,5 @@ char *_strncat(char*, char*, int);
 char *_strncpy(char*, char*, int);
 void reverse_array(int*, int);
 char *string_toupper(char *);
+int _strcmp(char*, char*);
 
