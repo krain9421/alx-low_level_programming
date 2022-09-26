@@ -12,12 +12,13 @@
 char **_memset(char *s, char b, unsigned int n)
 {
 	unsigned int i;
-	char **sptr = &s;
+	char **sptr;
 
 	for (i = 0; i < n; i++)
 	{
 		s[i] = b;
 	}
+	sptr = &s;
 
 	return (sptr);
 }
