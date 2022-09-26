@@ -11,7 +11,7 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i = 0;
+	unsigned int i = 0;
 	char **sptr = &s;
 
 	for (; i < n; i++)
@@ -19,6 +19,6 @@ char *_memset(char *s, char b, unsigned int n)
 		s[i] = b;
 	}
 
-	return (*sptr);
+	return (sptr);
 }
 
