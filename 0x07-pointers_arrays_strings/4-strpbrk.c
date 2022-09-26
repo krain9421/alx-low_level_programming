@@ -12,33 +12,20 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	char *find;
-	char *c;
+	char *find = NULL;
+	char *c = accept;
 
-	while (*s)
-	{
-		/*return s char position if found in accept*/
-		/*if not found return NULL*/
-
-		find = NULL;
+	do {
 		*c = accept;
 		do {
 			if (*c == *s)
 			{
-				find = c;
+				find = s;
 				break;
 			}
 		} while (*c++);
-
-		if (find != NULL)
-		{
-			return (s);
-		}
-		else
-		{
-			s++;
-		}
-	}
+		
+	} while (*s++);
 
 	return (NULL);
 }
