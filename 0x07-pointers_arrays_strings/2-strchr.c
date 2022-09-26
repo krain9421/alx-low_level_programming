@@ -22,7 +22,7 @@ char *_strchr(char *s, char c)
 		i++;
 	}
 
-	if (j <= 0)
+	if (j == 0)
 	{
 		return (NULL);
 	}
