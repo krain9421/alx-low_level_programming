@@ -19,7 +19,7 @@ char *_strchr(char *s, char c)
 			find = s;
 			break;
 		}
-		s++;
+		*s++;
 	}
 
 	return (find);
