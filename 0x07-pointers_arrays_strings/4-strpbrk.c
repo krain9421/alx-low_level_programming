@@ -13,10 +13,10 @@
 char *_strpbrk(char *s, char *accept)
 {
 	char *find = NULL;
-	char *c = accept;
+	char *c;
 
 	do {
-		*c = accept;
+		c = accept;
 		do {
 			if (*c == *s)
 			{
@@ -27,6 +27,6 @@ char *_strpbrk(char *s, char *accept)
 		
 	} while (*s++);
 
-	return (NULL);
+	return (find);
 }
 
