@@ -22,6 +22,13 @@ char *_strchr(char *s, char c)
 		i++;
 	}
 
-	return (s+j);
+	if (j <= 0)
+	{
+		return (NULL);
+	}
+	else
+	{
+		return (s + j);
+	}
 }
 
