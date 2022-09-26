@@ -11,17 +11,14 @@
 char *_strchr(char *s, char c)
 {
 	char *find = NULL;
-	int i = 0;
 
-	while (s[i] != '\0')
-	{
-		if (s[i] == c)
+	do {
+		if (*s == c)
 		{
-			find = s++;
+			find = s;
 			break;
 		}
-		i++;
-	}
+	} while (*s++);
 
 	return (find);
 }
