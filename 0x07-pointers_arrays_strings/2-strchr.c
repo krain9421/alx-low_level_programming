@@ -12,10 +12,11 @@ char *_strchr(char *s, char c)
 {
 	int i = 0;
 	int j = 0;
+	char *t = s;
 
-	while (s[i] != '\0')
+	while (t[i] != '\0')
 	{
-		if (s[i] == c)
+		if (t[i] == c)
 		{
 			j += i;
 		}
@@ -24,11 +25,11 @@ char *_strchr(char *s, char c)
 
 	if (j == 0)
 	{
-		s = '\0';
+		t = '\0';
 	}
 	else
 	{
-		s  += j;
+		t  += j;
 	}
 
 	return (s);
