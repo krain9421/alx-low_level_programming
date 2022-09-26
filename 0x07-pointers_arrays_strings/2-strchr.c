@@ -25,11 +25,12 @@ char *_strchr(char *s, char c)
 	if (j == 0)
 	{
 		s = "";
-		return (s);
 	}
 	else
 	{
-		return (s + j);
+		s  += j;
 	}
+
+	return (s);
 }
 
