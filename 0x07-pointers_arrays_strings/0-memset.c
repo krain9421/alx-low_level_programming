@@ -20,6 +20,6 @@ char **_memset(char *s, char b, unsigned int n)
 	}
 	sptr = &s;
 
-	return (sptr);
+	return (*sptr);
 }
 
