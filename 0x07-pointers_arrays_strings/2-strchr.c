@@ -12,6 +12,8 @@ char *_strchr(char *s, char c)
 {
 	char *find = NULL;
 
+	if (*s != NULL)
+	{
 	while (*s != '\0')
 	{
 		if (*s == c)
@@ -20,6 +22,7 @@ char *_strchr(char *s, char c)
 			break;
 		}
 		s++;
+	}
 	}
 
 	return (find);
