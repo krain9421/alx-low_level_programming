@@ -15,7 +15,8 @@ char *_strpbrk(char *s, char *accept)
 	char *find = NULL;
 	char *c;
 
-	do {
+	while (*s)
+	{
 		c = accept;
 		do {
 			if (*c == *s)
@@ -24,9 +25,18 @@ char *_strpbrk(char *s, char *accept)
 				break;
 			}
 		} while (*c++);
-		
-	} while (*s++);
 
-	return (find);
+		if (find != NULL)
+		{
+			return (s)
+		}
+		else
+		{
+			s++;
+		}
+		
+	}
+
+	return (NULL);
 }
 
