@@ -11,20 +11,17 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	char *find = NULL;
-	char *c;
+	unsigned int i, j;
 
-	while (*s)
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		c = accept;
-		do {
-			if (*c == *s)
+		for (j = 0; *(accept + j) != '\0'; j++)
+		{
+			if (*(s + i) == *(accept + j))
 			{
-				find = s;
-				return (find);
+				return (s + i);
 			}
-		} while (*c++);
-		s++;
+		}
 	}
 
 	return (NULL);
