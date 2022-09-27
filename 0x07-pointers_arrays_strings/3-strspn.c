@@ -10,33 +10,23 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	char *find = NULL;
-	char *c;
-	unsigned int len = 0;
+	unsigned int i, j, k;
 
-	while (*s)
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		c = accept;
-		do {
-			if (*c == *s)
+		k = 1;
+		for (j = 0; *(accept + j) != '\0'; j++)
+		{
+			if (*(s + i) == *(accept + j))
 			{
-				find = s;
+				k = 0;
 				break;
 			}
-		} while (*c++);
-
-		if (find != NULL)
-		{
-			len++;
 		}
-		else
+		if (k == 1)
 		{
-			return (len);
+			break;
 		}
-		s++;
-		
 	}
 
-	return (len);
-}
-
+	return (i);
