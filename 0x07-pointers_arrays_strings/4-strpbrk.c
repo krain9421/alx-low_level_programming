@@ -28,7 +28,7 @@ char *_strpbrk(char *s, char *accept)
 
 		if (find != NULL)
 		{
-			return (s)
+			return (s);
 		}
 		else
 		{
