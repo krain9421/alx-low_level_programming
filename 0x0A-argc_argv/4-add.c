@@ -19,15 +19,29 @@ int main(int argc, char *argv[])
 	{
 		int n;
 		int sum = 0;
-		
+
 		argc--;
 		while (argc)
 		{
 			if (isdigit(*argv[argc]))
 			{
-				n = atoi(argv[argc]);
-				sum += n;
+				char *tmp = argv[argc];
+
+				while (isdigit(*(++tmp)))
+				{
+				}
+				if (!(*tmp))
+				{
+					n = atoi(argv[argc]);
+					sum += n;
+				}
+				else
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
+
 			else if (!isdigit(*argv[argc]))
 			{
 				printf("Error\n");
