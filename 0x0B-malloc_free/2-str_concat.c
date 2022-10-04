@@ -33,9 +33,10 @@ char *str_concat(char *s1, char *s2)
 	if (nstr == NULL)
 		return (NULL);
 
-	for (i = 0; i < len1; i++)
+	while (i < len1)
 	{
 		nstr[i] = s1[i];
+		i++;
 	}
 
 	while (i <= size)
