@@ -14,7 +14,9 @@ char *str_concat(char *s1, char *s2)
 {
 	unsigned int len1 = 0;
 	unsigned int len2 = 0;
-	unsigned int size, i, j;
+	unsigned int size; 
+	unsigned int i = 0;
+       	unsigned int j = 0;
 	char *nstr;
 
 	if (s1 == NULL)
@@ -24,6 +26,7 @@ char *str_concat(char *s1, char *s2)
 
 	while (s1[len1] != '\0')
 		len1++;
+
 	while (s2[len2] != '\0')
 		len2++;
 
