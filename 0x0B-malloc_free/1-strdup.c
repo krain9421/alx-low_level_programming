@@ -14,7 +14,6 @@ char *_strdup(char *str)
 {
 	char *nstr;
 	unsigned int len;
-	unsigned int i;
 
 	if (str == NULL)
 	{
