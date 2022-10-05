@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 
-/*
+/**
 * alloc_grid - create a matrix using malloc
 * @width: width of matrix
 * @height: height of the matrix
