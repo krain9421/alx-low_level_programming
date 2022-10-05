@@ -14,7 +14,7 @@ char *argstostr(int ac, char **av)
 {
 	int height = 0;
 	int width = 0;
-	int strings_len = ac;
+	int strings_len = 0;
 	int i = 0;
 	char *str;
 
@@ -31,6 +31,7 @@ char *argstostr(int ac, char **av)
 		height++;
 	}
 
+	strings_len += ac;
 	str = malloc(sizeof(char) * strings_len + 1);
 	if (str == NULL)
 		return (NULL);
