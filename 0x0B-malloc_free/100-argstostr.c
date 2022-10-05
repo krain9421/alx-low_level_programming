@@ -35,22 +35,18 @@ char *argstostr(int ac, char **av)
 	str = malloc(sizeof(char) * strings_len + 1);
 	if (str == NULL)
 		return (NULL);
-	
-	height = 0;
-	while (height < ac)
+
+	for (height = 0; height < ac; height++)
 	{
-		width = 0;
-		while (av[height][width])
+		for (width = 0; av[height][width]; width++)
 		{
 			str[i] = av[height][width];
 			i++;
-			width++;
 		}
 		if (str[i] == '\0')
 		{
-			str[i++] = '\n';
+			str[i++] = '\n':
 		}
-		height++;
 	}
 	return (str);
 }
