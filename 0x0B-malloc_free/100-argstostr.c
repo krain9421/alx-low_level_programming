@@ -21,14 +21,12 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 	/* Get the length of all the strings in av */
-	while (height < ac)
+	for (height = 0; height < ac; height++)
 	{
-		while (av[height][width])
+		for (width = 0; av[height][width]; width++)
 		{
 			strings_len++;
-			width++;
 		}
-		height++;
 	}
 
 	strings_len += ac;
