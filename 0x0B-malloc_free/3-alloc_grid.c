@@ -30,7 +30,7 @@ int **alloc_grid(int width, int height)
 		{
 			while(h >= 0)
 			{
-				free(matrix[h];
+				free(matrix[h]);
 				h--;
 			}
 			free(matrix);
