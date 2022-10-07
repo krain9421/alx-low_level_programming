@@ -15,7 +15,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *calloc;
 	unsigned int i = 0;
-	int *set;
+	char *set;
 
 	if (nmemb == 0 || size == 0)
 	{
@@ -32,7 +32,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	for (; i < (size * nmemb); i++)
 	{
-		set[i] = NULL;
+		set[i] = '\0';
 	}
 
 	return (calloc);
