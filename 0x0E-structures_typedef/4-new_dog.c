@@ -16,6 +16,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	struct dog *dog_new;
 	int lname = 0;
 	int lowner = 0;
+	int i;
 
 	while (name[lname])
 	{ 
@@ -37,15 +38,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog_new->owner == NULL)
 	{ return (NULL); }
 
-	while (*name)
-	{
-		*(dog_new->name++) = *name++;
-	}
-	 while (*owner)
-	{
-		*(dog_new->owner++) = *owner++;
-	}
+	for (i = 0; i <= lname; i++)
+		dog_new->name[i] = name[i];
+
+	for (i = 0; i <= lowner; i++)
+		dog_new->owner[i] = owner[i];
+
 	dog_new->age = age;	
-		return (dog_new);
+	return (dog_new);
 }
 
