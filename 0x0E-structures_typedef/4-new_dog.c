@@ -13,18 +13,22 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog_new;
-	char *cname;
-	char *cowner;
+	struct dog *dog_new;
 	int lname = 0;
 	int lowner = 0;
 
-	while(name[lname])
-	{ lname++; }
-	while(owner[lowner]);
-	{ lowner++; }
+	while (name[lname])
+	{ 
+		lname++;
+	}
+
+	while (owner[lowner])
+	{ 
+		lowner++;
+	}
+
 	dog_new = malloc(sizeof(struct dog));
-	if (dog_new = NULL)
+	if (dog_new == NULL)
 	{ return (NULL); }
 	dog_new->name = malloc(lname + 1);
 	if (dog_new->name == NULL)
@@ -41,6 +45,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		*(dog_new->owner++) = *owner++;
 	}
-	return (dog_new);
+	dog_new->age = age;	
+		return (dog_new);
 }
 
