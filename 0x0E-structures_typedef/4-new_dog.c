@@ -19,12 +19,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int i;
 
 	while (name[lname])
-	{ 
+	{
 		lname++;
 	}
 
 	while (owner[lowner])
-	{ 
+	{
 		lowner++;
 	}
 
@@ -44,7 +44,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (i = 0; i <= lowner; i++)
 		dog_new->owner[i] = owner[i];
 
-	dog_new->age = age;	
+	dog_new->age = age;
 	return (dog_new);
 }
 
