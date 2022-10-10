@@ -1,9 +1,5 @@
-#ifndef ABSO
-#define ABSO
-#ifndef MASKO
-#define MASKO
+#ifndef ABS(x)
 
-#define MASK(x) ((x) >> (4 * 8 - 1))
-#define ABS(x) ( (MASK(x)) + (x) ^ (MASK(x)) )
+#define ABS(x) (((x) < (0)) ? (-(x)) : (x))
 #endif
 
