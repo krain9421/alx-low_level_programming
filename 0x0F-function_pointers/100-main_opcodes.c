@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	if (argc == 2)
 	{
 		code_num  = atoi(argv[1]);
-		if (bytes < 0)
+		if (code_num < 0)
 		{
 			printf("Error\n");
 			exit(2);
