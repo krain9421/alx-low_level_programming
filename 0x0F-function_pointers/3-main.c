@@ -13,25 +13,18 @@
 int main(int argc, char *argv[])
 {
 	int i = 0;
-	char *op = malloc(sizeof(argv[2]));
-	int *num1 = malloc(sizeof(int));
-	int *num2 = malloc(sizeof(int));
+	int n1 = 0;
+	int n2 = 0;
 
 	if (argc == 4)
 	{
-		op = argv[2];
-		*num1 = atoi(argv[1]);
-		*num2 = atoi(argv[3]);
-		i = (*get_op_func(op))((*num1), (*num2));
+		n1 = atoi(argv[1]);
+		n2 = atoi(argv[3]);
+		i = (*get_op_func(argv[2]))((n1), (n2));
 		printf("%d\n", i);
-		free(op);
-		free(num1);
-		free(num2);
+
 		return (0);
 	}
-	free(op);
-	free(num1);
-	free(num2);
 	printf("Error\n");
 	exit(98);
 }
