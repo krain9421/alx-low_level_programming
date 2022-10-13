@@ -29,8 +29,9 @@ int main(int argc, char *argv[])
 			if (i < code_num - 1)
 				printf(" ");
 			else
+			{
 				printf("\n");
-
+			}
 			i++;
 		}
 
