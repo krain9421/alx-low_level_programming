@@ -20,13 +20,10 @@ size_t print_listint(const listint_t *h)
 
 	for (; h != NULL; h = h->next)
 	{
-		if (h->n == NULL)
-		{}
-		else
-			printf("%d\n", h->n);
-
+		printf("%d\n", h->n);
 		count++;
 	}
+
 	return (count);
 }
 
