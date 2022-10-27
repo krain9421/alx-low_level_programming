@@ -35,8 +35,8 @@ int powr(int num, int p)
 */
 unsigned int binary_to_uint(const char *b)
 {
-	int count = 0, i = 0, j = 0;
-	unsigned int k = 0, result = 0;
+	int count = 0, i = 0, j = 0, k = 0;
+	unsigned int result = 0;
 
 	if (b == NULL)
 		return (0);
