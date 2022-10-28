@@ -28,7 +28,7 @@ int powr(int num, int p)
 /**
 * get_bit2 - returns the value of a bit at a given index
 * @n: number in decimal
-* @@index: index
+* @index: index
 *
 * Return: value of the bit
 */
@@ -52,6 +52,7 @@ void print_binary(unsigned long int n)
 	int bit = 0, count = 0;
 	unsigned long int sum = 0;
 	int i = 0;
+	char c;
 
 	for (; sum < n; i++)
 	{
@@ -67,7 +68,8 @@ void print_binary(unsigned long int n)
 	for (i = count; i >= 0; i--)
 	{
 		bit = get_bit2(n, i);
-		printf("%d", bit);
+		c = 49 - bit;
+		_putchar(c);
 	}
 }
 
