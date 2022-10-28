@@ -68,7 +68,7 @@ void print_binary(unsigned long int n)
 	for (i = count; i >= 0; i--)
 	{
 		bit = get_bit2(n, i);
-		c = 49 - bit;
+		c = 48 + bit;
 		_putchar(c);
 	}
 }
