@@ -7,7 +7,7 @@
 * @n: pointer to number in decimal
 * @index: index
 *
-* Return: 1 if successful 
+* Return: 1 if successful
 * 0 if error occurred
 */
 int clear_bit(unsigned long int *n, unsigned int index)
