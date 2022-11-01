@@ -4,7 +4,7 @@
 * create_file - creates a file
 * @filename: name of file
 * @text_content: text to be written into file
-* Return: 1 if successful 
+* Return: 1 if successful
 * -1 if failed
 */
 
@@ -22,7 +22,7 @@ int create_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 		text_content = "";
 
-	while(text_content[letters])
+	while (text_content[letters])
 		letters++;
 
 	wrt = write(fdes, text_content, letters);
